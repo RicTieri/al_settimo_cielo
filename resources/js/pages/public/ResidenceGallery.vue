@@ -18,11 +18,6 @@ defineOptions({ layout: PublicLayout });
             class="grid items-center gap-10 md:grid-cols-[1.05fr_0.95fr]"
         >
             <div class="space-y-6 public-reveal">
-                <p
-                    class="text-xs uppercase tracking-[0.5em] text-[var(--public-olive)]"
-                >
-                    Residence
-                </p>
                 <h1 class="font-display text-4xl md:text-5xl">
                     Due strutture, un’unica esperienza.
                 </h1>
@@ -49,31 +44,63 @@ defineOptions({ layout: PublicLayout });
         </div>
     </section>
 
+
     <section class="mx-auto w-full max-w-6xl px-6 pb-20">
-        <div
-            class="grid gap-8 rounded-[28px] border border-white/60 bg-white/75 p-10 md:grid-cols-3"
-        >
-            <div class="space-y-3 public-reveal">
-                <p class="font-display text-xl">Al Settimo Cielo</p>
-                <p class="text-sm text-[var(--public-olive)]">
-                    Atmosfere eleganti, spazi curati e dettagli di charme per un
-                    soggiorno esclusivo.
-                </p>
-            </div>
-            <div class="space-y-3 public-reveal public-reveal-delay-1">
-                <p class="font-display text-xl">Piccolo Marte</p>
-                <p class="text-sm text-[var(--public-olive)]">
-                    Una dimensione intima e riservata, ideale per chi desidera
-                    quiete e privacy.
-                </p>
-            </div>
-            <div class="space-y-3 public-reveal public-reveal-delay-2">
-                <p class="font-display text-xl">Quattro soluzioni</p>
-                <p class="text-sm text-[var(--public-olive)]">
-                    Camere curate nei minimi dettagli, pensate per ogni esigenza
-                    di comfort.
-                </p>
-            </div>
+        <div class="flex items-center justify-between pb-6 public-reveal">
+            <h2 class="font-display text-2xl md:text-3xl">
+                Le nostre strutture
+            </h2>
+            <span
+                class="text-xs uppercase tracking-[0.4em] text-[var(--public-olive)]"
+            >
+                Residence
+            </span>
+        </div>
+        <div class="grid gap-6 md:grid-cols-2">
+            <article
+                class="flex flex-col gap-6 rounded-[28px] border border-white/60 bg-white/80 p-8 shadow-sm public-reveal"
+            >
+                <div class="space-y-3">
+                    <p class="text-xs uppercase tracking-[0.4em] text-[var(--public-olive)]">
+                        Al Settimo Cielo
+                    </p>
+                    <p class="font-display text-2xl">
+                        Suite e appartamenti con piscina privata.
+                    </p>
+                    <p class="text-sm text-[var(--public-olive)]">
+                        Un complesso esclusivo con ingressi indipendenti,
+                        terrazze e servizi completi per un soggiorno elegante.
+                    </p>
+                </div>
+                <Link
+                    href="/al-settimo-cielo"
+                    class="inline-flex w-fit rounded-full bg-[var(--public-night)] px-6 py-3 text-xs uppercase tracking-[0.3em] text-white transition hover:bg-[var(--public-terracotta)]"
+                >
+                    Scopri Al Settimo Cielo
+                </Link>
+            </article>
+            <article
+                class="flex flex-col gap-6 rounded-[28px] border border-white/60 bg-white/80 p-8 shadow-sm public-reveal public-reveal-delay-1"
+            >
+                <div class="space-y-3">
+                    <p class="text-xs uppercase tracking-[0.4em] text-[var(--public-olive)]">
+                        Piccolo Marte
+                    </p>
+                    <p class="font-display text-2xl">
+                        Camere con terrazza e giardini privati.
+                    </p>
+                    <p class="text-sm text-[var(--public-olive)]">
+                        Un residence indipendente e ristrutturato con soluzioni
+                        moderne, affacci panoramici e privacy totale.
+                    </p>
+                </div>
+                <Link
+                    href="/piccolo-marte"
+                    class="inline-flex w-fit rounded-full bg-[var(--public-night)] px-6 py-3 text-xs uppercase tracking-[0.3em] text-white transition hover:bg-[var(--public-terracotta)]"
+                >
+                    Scopri Piccolo Marte
+                </Link>
+            </article>
         </div>
     </section>
 </template>

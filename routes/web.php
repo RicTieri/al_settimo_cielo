@@ -19,6 +19,14 @@ Route::get('/residence-gallery', function () {
     return Inertia::render('public/ResidenceGallery');
 })->name('residence-gallery');
 
+Route::get('/al-settimo-cielo', function () {
+    return Inertia::render('public/ResidenceSettimoCielo');
+})->name('residence-al-settimo-cielo');
+
+Route::get('/piccolo-marte', function () {
+    return Inertia::render('public/PiccoloMarte');
+})->name('piccolo-marte');
+
 Route::get('/location', function () {
     return Inertia::render('public/Location');
 })->name('location');

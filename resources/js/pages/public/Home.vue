@@ -37,11 +37,6 @@ const gallery = [
             class="grid items-center gap-10 md:grid-cols-[1.1fr_0.9fr]"
         >
             <div class="space-y-6 public-reveal">
-                <p
-                    class="text-xs uppercase tracking-[0.5em] text-[var(--public-olive)]"
-                >
-                    Sale per matrimoni
-                </p>
                 <h1 class="font-display text-4xl leading-tight md:text-5xl">
                     Un ricevimento che si vive tra colline, luce e meraviglia.
                 </h1>
