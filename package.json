@@ -5,7 +5,9 @@
     "scripts": {
         "build": "vite build",
         "build:ssr": "vite build && vite build --ssr",
+        "build:ssg": "vite build && vite build --ssr resources/js/ssg.ts",
         "dev": "vite",
+        "export:ssg": "npm run build:ssg && node scripts/ssg-export.mjs",
         "format": "prettier --write resources/",
         "format:check": "prettier --check resources/",
         "lint": "eslint . --fix"
